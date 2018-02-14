@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15AA231B203404A10041B552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231A203404A10041B552 /* Assets.xcassets */; };
+		15AA231D203405410041B552 /* A Millie Freemix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231C203405410041B552 /* A Millie Freemix.mp3 */; };
+		15AA2320203414C90041B552 /* Piggy Bank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231F203414C90041B552 /* Piggy Bank.mp3 */; };
+		15E2747B20337EA400F6ED70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2747A20337EA400F6ED70 /* AppDelegate.swift */; };
+		15E2748320337EA400F6ED70 /* BopTop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15E2748120337EA400F6ED70 /* BopTop.xcdatamodeld */; };
+		15E2748820337EA400F6ED70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E2748620337EA400F6ED70 /* LaunchScreen.storyboard */; };
+		15E2749320337EA400F6ED70 /* BopTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2749220337EA400F6ED70 /* BopTopTests.swift */; };
+		15E2749E20337EA400F6ED70 /* BopTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2749D20337EA400F6ED70 /* BopTopUITests.swift */; };
+		15E274AC203380E600F6ED70 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274AB203380E600F6ED70 /* LoadingController.swift */; };
+		15E274B0203381EE00F6ED70 /* UIView Layout Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274AF203381EE00F6ED70 /* UIView Layout Helpers.swift */; };
+		15E274B2203384D600F6ED70 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274B1203384D600F6ED70 /* MainTabBarController.swift */; };
+		15E274B4203385A000F6ED70 /* TopBopsCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274B3203385A000F6ED70 /* TopBopsCollectionController.swift */; };
+		15E274B62033860400F6ED70 /* WannabeBopsCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274B52033860400F6ED70 /* WannabeBopsCollectionController.swift */; };
+		15E274B82033984C00F6ED70 /* WannabeBopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274B72033984C00F6ED70 /* WannabeBopsController.swift */; };
+		15E274BA2033986000F6ED70 /* TopBopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274B92033986000F6ED70 /* TopBopsController.swift */; };
+		15E274BD20339F8200F6ED70 /* TopBopsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274BC20339F8200F6ED70 /* TopBopsHeader.swift */; };
+		15E274BF20339FAB00F6ED70 /* TopBopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274BE20339FAB00F6ED70 /* TopBopCell.swift */; };
+		15E274C22033A6A700F6ED70 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274C12033A6A700F6ED70 /* Song.swift */; };
+		15E274C42033AA1100F6ED70 /* TopBops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274C32033AA1100F6ED70 /* TopBops.swift */; };
+		15E274C62033AEFD00F6ED70 /* SongStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274C52033AEFD00F6ED70 /* SongStore.swift */; };
+		15E274C82033BC8100F6ED70 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274C72033BC8100F6ED70 /* DateHelper.swift */; };
+		15E274CC203400F900F6ED70 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E274CB203400F900F6ED70 /* Player.swift */; };
+		3870AC9B368489B01DEBB8FA /* Pods_BopTop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDBE23436B38099A447A0DC /* Pods_BopTop.framework */; };
+		3DA0769C2FAB777AF99D68A8 /* Pods_BopTopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2C76DB10FA2DE672E8A6F4 /* Pods_BopTopUITests.framework */; };
+		AC90B0EAB138F5A5570D1272 /* Pods_BopTopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63962261E6894760997A48 /* Pods_BopTopTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E2748F20337EA400F6ED70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E2746F20337EA400F6ED70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E2747620337EA400F6ED70;
+			remoteInfo = BopTop;
+		};
+		15E2749A20337EA400F6ED70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E2746F20337EA400F6ED70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E2747620337EA400F6ED70;
+			remoteInfo = BopTop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E3519DE0BB2438811881E2 /* Pods-BopTopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BopTopTests/Pods-BopTopTests.release.xcconfig"; sourceTree = "<group>"; };
+		15AA231A203404A10041B552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15AA231C203405410041B552 /* A Millie Freemix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Millie Freemix.mp3"; path = "../../../../../../../Music/iTunes/iTunes Media/Music/Lil Wayne/Unknown/A Millie Freemix.mp3"; sourceTree = "<group>"; };
+		15AA231E203405450041B552 /* A Millie Freemix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Millie Freemix.mp3"; sourceTree = "<group>"; };
+		15AA231F203414C90041B552 /* Piggy Bank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Piggy Bank.mp3"; path = "../../../../../../Music/iTunes/iTunes Media/Music/50 Cent/The Massacre/Piggy Bank.mp3"; sourceTree = "<group>"; };
+		15E2747720337EA400F6ED70 /* BopTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BopTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2747A20337EA400F6ED70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15E2748220337EA400F6ED70 /* BopTop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BopTop.xcdatamodel; sourceTree = "<group>"; };
+		15E2748720337EA400F6ED70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15E2748920337EA400F6ED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E2748E20337EA400F6ED70 /* BopTopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BopTopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2749220337EA400F6ED70 /* BopTopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BopTopTests.swift; sourceTree = "<group>"; };
+		15E2749420337EA400F6ED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E2749920337EA400F6ED70 /* BopTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BopTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2749D20337EA400F6ED70 /* BopTopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BopTopUITests.swift; sourceTree = "<group>"; };
+		15E2749F20337EA400F6ED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E274AB203380E600F6ED70 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
+		15E274AF203381EE00F6ED70 /* UIView Layout Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Layout Helpers.swift"; sourceTree = "<group>"; };
+		15E274B1203384D600F6ED70 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		15E274B3203385A000F6ED70 /* TopBopsCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBopsCollectionController.swift; sourceTree = "<group>"; };
+		15E274B52033860400F6ED70 /* WannabeBopsCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannabeBopsCollectionController.swift; sourceTree = "<group>"; };
+		15E274B72033984C00F6ED70 /* WannabeBopsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannabeBopsController.swift; sourceTree = "<group>"; };
+		15E274B92033986000F6ED70 /* TopBopsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBopsController.swift; sourceTree = "<group>"; };
+		15E274BC20339F8200F6ED70 /* TopBopsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBopsHeader.swift; sourceTree = "<group>"; };
+		15E274BE20339FAB00F6ED70 /* TopBopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBopCell.swift; sourceTree = "<group>"; };
+		15E274C12033A6A700F6ED70 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		15E274C32033AA1100F6ED70 /* TopBops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBops.swift; sourceTree = "<group>"; };
+		15E274C52033AEFD00F6ED70 /* SongStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStore.swift; sourceTree = "<group>"; };
+		15E274C72033BC8100F6ED70 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		15E274CB203400F900F6ED70 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1EC5C57F22AC6716DE3A4A16 /* Pods-BopTop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BopTop/Pods-BopTop.debug.xcconfig"; sourceTree = "<group>"; };
+		1FBC031176D148E1F31A0EA6 /* Pods-BopTopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BopTopTests/Pods-BopTopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C63962261E6894760997A48 /* Pods_BopTopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BopTopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDBE23436B38099A447A0DC /* Pods_BopTop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BopTop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797390BBD180AB56C60B867C /* Pods-BopTop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTop.release.xcconfig"; path = "Pods/Target Support Files/Pods-BopTop/Pods-BopTop.release.xcconfig"; sourceTree = "<group>"; };
+		937501D006EA80783EAD268C /* Pods-BopTopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BopTopUITests/Pods-BopTopUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC125EC1B0BA5578B0250B98 /* Pods-BopTopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BopTopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BopTopUITests/Pods-BopTopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2C76DB10FA2DE672E8A6F4 /* Pods_BopTopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BopTopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15E2747420337EA400F6ED70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3870AC9B368489B01DEBB8FA /* Pods_BopTop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2748B20337EA400F6ED70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC90B0EAB138F5A5570D1272 /* Pods_BopTopTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2749620337EA400F6ED70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA0769C2FAB777AF99D68A8 /* Pods_BopTopUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15E2746E20337EA400F6ED70 = {
+			isa = PBXGroup;
+			children = (
+				15E2747920337EA400F6ED70 /* BopTop */,
+				15E2749120337EA400F6ED70 /* BopTopTests */,
+				15E2749C20337EA400F6ED70 /* BopTopUITests */,
+				15E2747820337EA400F6ED70 /* Products */,
+				69CAF8F62AEC2659405C75A7 /* Pods */,
+				AE92A2C39A6943DA7E92C3F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15E2747820337EA400F6ED70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15E2747720337EA400F6ED70 /* BopTop.app */,
+				15E2748E20337EA400F6ED70 /* BopTopTests.xctest */,
+				15E2749920337EA400F6ED70 /* BopTopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15E2747920337EA400F6ED70 /* BopTop */ = {
+			isa = PBXGroup;
+			children = (
+				15E2747A20337EA400F6ED70 /* AppDelegate.swift */,
+				15E2748620337EA400F6ED70 /* LaunchScreen.storyboard */,
+				15AA231A203404A10041B552 /* Assets.xcassets */,
+				15E2748920337EA400F6ED70 /* Info.plist */,
+				15E2748120337EA400F6ED70 /* BopTop.xcdatamodeld */,
+				15E274C02033A69900F6ED70 /* Models */,
+				15E274BB20339F3000F6ED70 /* Views */,
+				15E274AD203380F100F6ED70 /* Controllers */,
+				15AA231E203405450041B552 /* A Millie Freemix.mp3 */,
+				15AA231F203414C90041B552 /* Piggy Bank.mp3 */,
+				15E274AE2033813D00F6ED70 /* Extensions */,
+			);
+			path = BopTop;
+			sourceTree = "<group>";
+		};
+		15E2749120337EA400F6ED70 /* BopTopTests */ = {
+			isa = PBXGroup;
+			children = (
+				15E2749220337EA400F6ED70 /* BopTopTests.swift */,
+				15E2749420337EA400F6ED70 /* Info.plist */,
+			);
+			path = BopTopTests;
+			sourceTree = "<group>";
+		};
+		15E2749C20337EA400F6ED70 /* BopTopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15E2749D20337EA400F6ED70 /* BopTopUITests.swift */,
+				15E2749F20337EA400F6ED70 /* Info.plist */,
+			);
+			path = BopTopUITests;
+			sourceTree = "<group>";
+		};
+		15E274AD203380F100F6ED70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15E274AB203380E600F6ED70 /* LoadingController.swift */,
+				15E274B1203384D600F6ED70 /* MainTabBarController.swift */,
+				15E274B72033984C00F6ED70 /* WannabeBopsController.swift */,
+				15E274B52033860400F6ED70 /* WannabeBopsCollectionController.swift */,
+				15E274B92033986000F6ED70 /* TopBopsController.swift */,
+				15E274B3203385A000F6ED70 /* TopBopsCollectionController.swift */,
+				15E274CB203400F900F6ED70 /* Player.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15E274AE2033813D00F6ED70 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15E274AF203381EE00F6ED70 /* UIView Layout Helpers.swift */,
+				15AA231C203405410041B552 /* A Millie Freemix.mp3 */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15E274BB20339F3000F6ED70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15E274BC20339F8200F6ED70 /* TopBopsHeader.swift */,
+				15E274BE20339FAB00F6ED70 /* TopBopCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15E274C02033A69900F6ED70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15E274C12033A6A700F6ED70 /* Song.swift */,
+				15E274C32033AA1100F6ED70 /* TopBops.swift */,
+				15E274C52033AEFD00F6ED70 /* SongStore.swift */,
+				15E274C72033BC8100F6ED70 /* DateHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69CAF8F62AEC2659405C75A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5C57F22AC6716DE3A4A16 /* Pods-BopTop.debug.xcconfig */,
+				797390BBD180AB56C60B867C /* Pods-BopTop.release.xcconfig */,
+				1FBC031176D148E1F31A0EA6 /* Pods-BopTopTests.debug.xcconfig */,
+				04E3519DE0BB2438811881E2 /* Pods-BopTopTests.release.xcconfig */,
+				BC125EC1B0BA5578B0250B98 /* Pods-BopTopUITests.debug.xcconfig */,
+				937501D006EA80783EAD268C /* Pods-BopTopUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE92A2C39A6943DA7E92C3F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EDBE23436B38099A447A0DC /* Pods_BopTop.framework */,
+				3C63962261E6894760997A48 /* Pods_BopTopTests.framework */,
+				DD2C76DB10FA2DE672E8A6F4 /* Pods_BopTopUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15E2747620337EA400F6ED70 /* BopTop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E274A220337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTop" */;
+			buildPhases = (
+				017BF58F9D472F5F26C75F00 /* [CP] Check Pods Manifest.lock */,
+				15E2747320337EA400F6ED70 /* Sources */,
+				15E2747420337EA400F6ED70 /* Frameworks */,
+				15E2747520337EA400F6ED70 /* Resources */,
+				5D91597C12C35EEB645E3E69 /* [CP] Embed Pods Frameworks */,
+				15629D273C9FBC1B05416799 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BopTop;
+			productName = BopTop;
+			productReference = 15E2747720337EA400F6ED70 /* BopTop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15E2748D20337EA400F6ED70 /* BopTopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E274A520337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTopTests" */;
+			buildPhases = (
+				ACFD9FCF13F77EA5D026858F /* [CP] Check Pods Manifest.lock */,
+				15E2748A20337EA400F6ED70 /* Sources */,
+				15E2748B20337EA400F6ED70 /* Frameworks */,
+				15E2748C20337EA400F6ED70 /* Resources */,
+				661B72B1D2CBD7EF6992260E /* [CP] Embed Pods Frameworks */,
+				6F44FCA696D8493EE6A67129 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E2749020337EA400F6ED70 /* PBXTargetDependency */,
+			);
+			name = BopTopTests;
+			productName = BopTopTests;
+			productReference = 15E2748E20337EA400F6ED70 /* BopTopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15E2749820337EA400F6ED70 /* BopTopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E274A820337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTopUITests" */;
+			buildPhases = (
+				962168F689095AF88BF67A15 /* [CP] Check Pods Manifest.lock */,
+				15E2749520337EA400F6ED70 /* Sources */,
+				15E2749620337EA400F6ED70 /* Frameworks */,
+				15E2749720337EA400F6ED70 /* Resources */,
+				7F2C75CAB3B94B14DEF15884 /* [CP] Embed Pods Frameworks */,
+				311ACD53B14DD958D13DF72A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E2749B20337EA400F6ED70 /* PBXTargetDependency */,
+			);
+			name = BopTopUITests;
+			productName = BopTopUITests;
+			productReference = 15E2749920337EA400F6ED70 /* BopTopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15E2746F20337EA400F6ED70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ryan Rizzo";
+				TargetAttributes = {
+					15E2747620337EA400F6ED70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					15E2748D20337EA400F6ED70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15E2747620337EA400F6ED70;
+					};
+					15E2749820337EA400F6ED70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15E2747620337EA400F6ED70;
+					};
+				};
+			};
+			buildConfigurationList = 15E2747220337EA400F6ED70 /* Build configuration list for PBXProject "BopTop" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15E2746E20337EA400F6ED70;
+			productRefGroup = 15E2747820337EA400F6ED70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15E2747620337EA400F6ED70 /* BopTop */,
+				15E2748D20337EA400F6ED70 /* BopTopTests */,
+				15E2749820337EA400F6ED70 /* BopTopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15E2747520337EA400F6ED70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15AA2320203414C90041B552 /* Piggy Bank.mp3 in Resources */,
+				15AA231B203404A10041B552 /* Assets.xcassets in Resources */,
+				15E2748820337EA400F6ED70 /* LaunchScreen.storyboard in Resources */,
+				15AA231D203405410041B552 /* A Millie Freemix.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2748C20337EA400F6ED70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2749720337EA400F6ED70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017BF58F9D472F5F26C75F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BopTop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15629D273C9FBC1B05416799 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTop/Pods-BopTop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		311ACD53B14DD958D13DF72A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTopUITests/Pods-BopTopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D91597C12C35EEB645E3E69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BopTop/Pods-BopTop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LKAlertController/LKAlertController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKAlertController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTop/Pods-BopTop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661B72B1D2CBD7EF6992260E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTopTests/Pods-BopTopTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F44FCA696D8493EE6A67129 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTopTests/Pods-BopTopTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2C75CAB3B94B14DEF15884 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BopTopUITests/Pods-BopTopUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962168F689095AF88BF67A15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BopTopUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFD9FCF13F77EA5D026858F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BopTopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15E2747320337EA400F6ED70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E274B62033860400F6ED70 /* WannabeBopsCollectionController.swift in Sources */,
+				15E274B82033984C00F6ED70 /* WannabeBopsController.swift in Sources */,
+				15E274B0203381EE00F6ED70 /* UIView Layout Helpers.swift in Sources */,
+				15E274C22033A6A700F6ED70 /* Song.swift in Sources */,
+				15E274CC203400F900F6ED70 /* Player.swift in Sources */,
+				15E2748320337EA400F6ED70 /* BopTop.xcdatamodeld in Sources */,
+				15E274B2203384D600F6ED70 /* MainTabBarController.swift in Sources */,
+				15E274B4203385A000F6ED70 /* TopBopsCollectionController.swift in Sources */,
+				15E274BD20339F8200F6ED70 /* TopBopsHeader.swift in Sources */,
+				15E274C62033AEFD00F6ED70 /* SongStore.swift in Sources */,
+				15E274C82033BC8100F6ED70 /* DateHelper.swift in Sources */,
+				15E274BA2033986000F6ED70 /* TopBopsController.swift in Sources */,
+				15E2747B20337EA400F6ED70 /* AppDelegate.swift in Sources */,
+				15E274C42033AA1100F6ED70 /* TopBops.swift in Sources */,
+				15E274AC203380E600F6ED70 /* LoadingController.swift in Sources */,
+				15E274BF20339FAB00F6ED70 /* TopBopCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2748A20337EA400F6ED70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E2749320337EA400F6ED70 /* BopTopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2749520337EA400F6ED70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E2749E20337EA400F6ED70 /* BopTopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E2749020337EA400F6ED70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E2747620337EA400F6ED70 /* BopTop */;
+			targetProxy = 15E2748F20337EA400F6ED70 /* PBXContainerItemProxy */;
+		};
+		15E2749B20337EA400F6ED70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E2747620337EA400F6ED70 /* BopTop */;
+			targetProxy = 15E2749A20337EA400F6ED70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15E2748620337EA400F6ED70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15E2748720337EA400F6ED70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15E274A020337EA400F6ED70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15E274A120337EA400F6ED70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15E274A320337EA400F6ED70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC5C57F22AC6716DE3A4A16 /* Pods-BopTop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15E274A420337EA400F6ED70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797390BBD180AB56C60B867C /* Pods-BopTop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15E274A620337EA400F6ED70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBC031176D148E1F31A0EA6 /* Pods-BopTopTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BopTop.app/BopTop";
+			};
+			name = Debug;
+		};
+		15E274A720337EA400F6ED70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E3519DE0BB2438811881E2 /* Pods-BopTopTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BopTop.app/BopTop";
+			};
+			name = Release;
+		};
+		15E274A920337EA400F6ED70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC125EC1B0BA5578B0250B98 /* Pods-BopTopUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BopTop;
+			};
+			name = Debug;
+		};
+		15E274AA20337EA400F6ED70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937501D006EA80783EAD268C /* Pods-BopTopUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6HA8VBK98;
+				INFOPLIST_FILE = BopTopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanrizzo.BopTopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BopTop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15E2747220337EA400F6ED70 /* Build configuration list for PBXProject "BopTop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E274A020337EA400F6ED70 /* Debug */,
+				15E274A120337EA400F6ED70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E274A220337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E274A320337EA400F6ED70 /* Debug */,
+				15E274A420337EA400F6ED70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E274A520337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E274A620337EA400F6ED70 /* Debug */,
+				15E274A720337EA400F6ED70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E274A820337EA400F6ED70 /* Build configuration list for PBXNativeTarget "BopTopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E274A920337EA400F6ED70 /* Debug */,
+				15E274AA20337EA400F6ED70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15E2748120337EA400F6ED70 /* BopTop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15E2748220337EA400F6ED70 /* BopTop.xcdatamodel */,
+			);
+			currentVersion = 15E2748220337EA400F6ED70 /* BopTop.xcdatamodel */;
+			path = BopTop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 15E2746F20337EA400F6ED70 /* Project object */;
+}

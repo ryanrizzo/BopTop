@@ -1,0 +1,12 @@
+PODS:
+  - LKAlertController (1.12.1)
+
+DEPENDENCIES:
+  - LKAlertController
+
+SPEC CHECKSUMS:
+  LKAlertController: e229465c0b4543ea122bfe62567747e6213ee43f
+
+PODFILE CHECKSUM: 45485cafdef609d41a93dd9d60edaf5806b3d2e0
+
+COCOAPODS: 1.4.0

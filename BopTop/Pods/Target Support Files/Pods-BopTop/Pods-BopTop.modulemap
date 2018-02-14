@@ -1,0 +1,6 @@
+framework module Pods_BopTop {
+  umbrella header "Pods-BopTop-umbrella.h"
+
+  export *
+  module * { export * }
+}
