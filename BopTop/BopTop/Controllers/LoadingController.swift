@@ -38,7 +38,7 @@ class LoadingController: UIViewController {
         let viewControllerList = [topBopsNavController, wannabeBopsNavController]
         mainTabBarController.viewControllers = viewControllerList
         
-        navigationController?.pushViewController(mainTabBarController, animated: true)
+        navigationController?.pushViewController(mainTabBarController, animated: false)
     }
     
     fileprivate func setupBackgroundView() {
@@ -49,7 +49,7 @@ class LoadingController: UIViewController {
     }
     
     fileprivate func setupSpeaker() {
-        let speakerView = SpeakerView.init(frame: CGRect.init(x: 0, y: 0, width: 127, height: 127))
+        let speakerView = SpeakerView.init(frame: CGRect.init(x: 0, y: 0, width: 117, height: 117*1.74))
         view.addSubview(speakerView)
         speakerView.clipsToBounds = false
         speakerView.anchorCenterSuperview()

@@ -46,12 +46,16 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
             guard notification.userInfo?["sender"] as? String == "WannabeBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
             activeCell?.isPlaying = true
-            collectionView?.reloadItems(at: [indexPath])
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: [indexPath])
+            }
         }
     }
 
@@ -60,12 +64,16 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
             guard notification.userInfo?["sender"] as? String == "WannabeBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
             activeCell?.isPlaying = false
-            collectionView?.reloadItems(at: [indexPath])
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: [indexPath])
+            }
         }
     }
 
@@ -74,7 +82,9 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
             guard notification.userInfo?["sender"] as? String == "WannabeBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
@@ -94,7 +104,9 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
             } else {
                 self.activeCell = (indexPath: indexPath, isPlaying: false)
             }
-            collectionView?.reloadItems(at: pathsToReload)
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: pathsToReload)
+            }
         }
     }
     
@@ -109,14 +121,14 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
             let song = self.wannabeBops.songs[indexPath.row]
             DispatchQueue.main.async {
                 ActionSheet(title: song.title, message: song.artist)
-                    .addAction("Add to Queue", style: .default, handler: { [unowned self] _ in
+                    .addAction("Add to Queue", style: .default, handler: { _ in
                         playerController.addToQueue(song: song, indexPath: indexPath, sender: "WannabeBops")
                         print("my queue: \(playerController.queue.count)")
                     })
-                    .addAction("Like Song", style: .default, handler: { [unowned self] _ in
+                    .addAction("Like Song", style: .default, handler: { _ in
                         //Like Song
                     })
-                    .addAction("View Artist", style: .default, handler: { [unowned self] _ in
+                    .addAction("View Artist", style: .default, handler: { _ in
                         //View Artist Page
                     })
                     .addAction("Cancel")
@@ -130,7 +142,7 @@ class WannabeBopsCollectionController: UICollectionViewController, UICollectionV
         
         collectionView?.register(WannabeBopCell.self, forCellWithReuseIdentifier: "WannabeBopCell")
         collectionView?.register(WannabeBopsHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "WannabeBopsHeader")
-        collectionView?.backgroundColor = .white
+        collectionView?.backgroundColor = UIColor(red:0.88, green:0.91, blue:0.96, alpha:1.0)
         if let cell = activeCell{
             var pathsToReload = [cell.indexPath]
             if playerController.currentSong?.sender == "WannabeBops" {

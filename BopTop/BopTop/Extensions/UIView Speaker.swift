@@ -19,17 +19,18 @@ class SpeakerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         let width = frame.width
+        let height = frame.height
         
-        boxLayer = self.boxLayer(width: width)
-        boxLayer?.position = CGPoint.init(x: -width/2, y: -width*0.75)
+        boxLayer = self.boxLayer(width: width, height: height)
+        boxLayer?.position = CGPoint.init(x: -width/2, y: -height/2)
         topLayer = self.topLayer(width: width)
-        topLayer?.position = CGPoint.init(x: self.center.x - width/2, y: -width/2.5)
+        topLayer?.position = CGPoint.init(x: self.center.x - width/2, y: -height/3.5)
         bottomLayer = self.bottomLayer(width: width)
-        bottomLayer?.position = CGPoint.init(x: self.center.x - width/2, y: width/3)
+        bottomLayer?.position = CGPoint.init(x: self.center.x - width/2, y: height/5.55)
         topSmallLayer = self.topSmallLayer(width: width)
-        topSmallLayer?.position = CGPoint.init(x: self.center.x - width/2, y: -width/2.5)
+        topSmallLayer?.position = CGPoint.init(x: self.center.x - width/2, y: -height/3.5)
         bottomSmallLayer = self.bottomSmallLayer(width: width)
-        bottomSmallLayer?.position = CGPoint.init(x: self.center.x - width/2, y: width/3)
+        bottomSmallLayer?.position = CGPoint.init(x: self.center.x - width/2, y: height/5.55)
         self.layer.addSublayer(boxLayer!)
         self.layer.addSublayer(bottomLayer!)
         self.layer.addSublayer(topLayer!)
@@ -63,9 +64,9 @@ class SpeakerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func boxLayer(width: CGFloat) -> CAShapeLayer {
+    func boxLayer(width: CGFloat, height: CGFloat) -> CAShapeLayer {
         let layer = CAShapeLayer()
-        layer.path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: width, height: width*1.6), byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize.init(width: width*0.17, height: width*0.17)).cgPath
+        layer.path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: width, height: height), byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize.init(width: width*0.18, height: width*0.18)).cgPath
         layer.strokeColor = UIColor.yellow.cgColor
         layer.lineWidth = 0
         layer.fillColor = UIColor.yellow.cgColor
@@ -75,7 +76,7 @@ class SpeakerView: UIView {
     
     func topLayer(width: CGFloat) -> CAShapeLayer {
         let layer = CAShapeLayer()
-        layer.path = UIBezierPath(arcCenter: .zero, radius: 0.17*width, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
+        layer.path = UIBezierPath(arcCenter: .zero, radius: 0.178*width, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
         layer.strokeColor = UIColor.black.cgColor
         layer.lineWidth = 0
         layer.fillColor = UIColor.black.cgColor
@@ -85,7 +86,7 @@ class SpeakerView: UIView {
     
     func bottomLayer(width: CGFloat) -> CAShapeLayer {
         let layer = CAShapeLayer()
-        layer.path = UIBezierPath(arcCenter: .zero, radius: width*0.34, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
+        layer.path = UIBezierPath(arcCenter: .zero, radius: width*0.36, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
         layer.strokeColor = UIColor.black.cgColor
         layer.lineWidth = 0
         layer.fillColor = UIColor.black.cgColor
@@ -95,7 +96,7 @@ class SpeakerView: UIView {
     
     func topSmallLayer(width: CGFloat) -> CAShapeLayer {
         let layer = CAShapeLayer()
-        layer.path = UIBezierPath(arcCenter: .zero, radius: width*0.09, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
+        layer.path = UIBezierPath(arcCenter: .zero, radius: width*0.085, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true).cgPath
         layer.strokeColor = UIColor.darkGray.cgColor
         layer.lineWidth = 0
         layer.fillColor = UIColor.darkGray.cgColor

@@ -19,7 +19,6 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
     var topBops = TopBops.init(weeks: [])
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         NotificationCenter.default.addObserver(self, selector: #selector(isPlaying), name: Notification.Name("isPlaying"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(isPaused), name: Notification.Name("isPaused"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didChangeSongs), name: Notification.Name("didChangeSongs"), object: nil)
@@ -46,13 +45,18 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
             guard notification.userInfo?["sender"] as? String == "TopBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
         
             activeCell?.isPlaying = true
-            collectionView?.reloadItems(at: [indexPath])
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: [indexPath])
+            }
+            
         }
     }
     
@@ -61,13 +65,17 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
             guard notification.userInfo?["sender"] as? String == "TopBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
             
             activeCell?.isPlaying = false
-            collectionView?.reloadItems(at: [indexPath])
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: [indexPath])
+            }
         }
     }
     
@@ -76,7 +84,9 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
             guard notification.userInfo?["sender"] as? String == "TopBops" else {
                 if let pathToReload = activeCell?.indexPath {
                     activeCell = nil
-                    collectionView?.reloadItems(at: [pathToReload])
+                    DispatchQueue.main.async{
+                        self.collectionView?.reloadItems(at: [pathToReload])
+                    }
                 }
                 return
             }
@@ -97,7 +107,9 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
             } else {
                 self.activeCell = (indexPath: indexPath, isPlaying: false)
             }
-            collectionView?.reloadItems(at: pathsToReload)
+            DispatchQueue.main.async{
+                self.collectionView?.reloadItems(at: pathsToReload)
+            }
         }
     }
     
@@ -112,11 +124,11 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
             let song = self.topBops.weeks[indexPath.section].songs[indexPath.row]
             DispatchQueue.main.async {
                 ActionSheet(title: song.title, message: song.artist)
-                    .addAction("Add to Queue", style: .default, handler: { [unowned self] _ in
+                    .addAction("Add to Queue", style: .default, handler: { _ in
                         playerController.addToQueue(song: song, indexPath: indexPath, sender: "TopBops")
                         print("my queue: \(playerController.queue.count)")
                     })
-                    .addAction("View Artist", style: .default, handler: { [unowned self] _ in
+                    .addAction("View Artist", style: .default, handler: { _ in
                         //View Artist Page
                     })
                     .addAction("Cancel")
@@ -130,7 +142,7 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
         
         collectionView?.register(TopBopCell.self, forCellWithReuseIdentifier: "TopBopCell")
         collectionView?.register(TopBopsHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "TopBopsHeader")
-        collectionView?.backgroundColor = .white
+        collectionView?.backgroundColor = UIColor(red:0.88, green:0.91, blue:0.96, alpha:1.0)
         if let cell = activeCell{
             var pathsToReload = [cell.indexPath]
             if playerController.currentSong?.sender == "TopBops" {
@@ -138,12 +150,12 @@ class TopBopsCollectionController: UICollectionViewController, UICollectionViewD
                 case .isNil:
                     activeCell = nil
                 case .isPaused:
-                    activeCell = (indexPath: playerController.currentSong?.indexPath, isPlaying: false) as! (indexPath: IndexPath, isPlaying: Bool)
+                    activeCell = (indexPath: playerController.currentSong?.indexPath, isPlaying: false) as? (indexPath: IndexPath, isPlaying: Bool)
                     if !pathsToReload.contains((activeCell?.indexPath)!){
                         pathsToReload.append((activeCell?.indexPath)!)
                     }
                 case .isPlaying:
-                    activeCell = (indexPath: playerController.currentSong?.indexPath, isPlaying: true) as! (indexPath: IndexPath, isPlaying: Bool)
+                    activeCell = (indexPath: playerController.currentSong?.indexPath, isPlaying: true) as? (indexPath: IndexPath, isPlaying: Bool)
                     if !pathsToReload.contains((activeCell?.indexPath)!){
                         pathsToReload.append((activeCell?.indexPath)!)
                     }

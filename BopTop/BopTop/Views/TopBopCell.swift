@@ -12,7 +12,7 @@ class TopBopCell: UICollectionViewCell {
     
     var playTapped : (()->())?
     
-    let speakerView = SpeakerView.init(frame: .init(x: 0, y: 0, width: 30, height: 40))
+    let speakerView = SpeakerView.init(frame: .init(x: 0, y: 0, width: 30, height: 30*1.74))
     
     let imageView: UIImageView = {
         let imageView = UIImageView()

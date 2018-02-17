@@ -44,7 +44,7 @@ class PlayerViewController: UIViewController {
     var titleLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = .white
+        label.textColor = .black
         label.text = "Not Playing"
         return label
     }()
@@ -52,7 +52,7 @@ class PlayerViewController: UIViewController {
     var artistLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
-        label.textColor = .white
+        label.textColor = .black
         label.text = "Select a Song"
         return label
     }()
@@ -60,7 +60,7 @@ class PlayerViewController: UIViewController {
     var playButton : UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
-        button.imageView?.tintColor = .white
+        button.imageView?.tintColor = .black
         button.isEnabled = false
         button.addTarget(self, action: #selector(playPressed), for: .touchUpInside)
         return button
@@ -68,7 +68,7 @@ class PlayerViewController: UIViewController {
     var skipButton : UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "next"), for: UIControlState.normal)
-        button.imageView?.tintColor = .white
+        button.imageView?.tintColor = .black
         button.isEnabled = false
         button.addTarget(self, action: #selector(skipPressed), for: .touchUpInside)
         return button
@@ -76,7 +76,7 @@ class PlayerViewController: UIViewController {
     var previousButton : UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "prev"), for: UIControlState.normal)
-        button.imageView?.tintColor = .white
+        button.imageView?.tintColor = .black
         button.isEnabled = false
         button.addTarget(self, action: #selector(previousPressed), for: .touchUpInside)
         return button
@@ -108,7 +108,7 @@ class PlayerViewController: UIViewController {
         if !UIAccessibilityIsReduceTransparencyEnabled() {
             view.backgroundColor = .clear
             
-            let blurEffect = UIBlurEffect(style: .dark)
+            let blurEffect = UIBlurEffect(style: .prominent)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             //always fill the view
             blurEffectView.frame = self.view.bounds
@@ -116,10 +116,10 @@ class PlayerViewController: UIViewController {
             
             view.addSubview(blurEffectView) //if you have more UIViews, use an insertSubview API to place it where needed
         } else {
-            view.backgroundColor = .black
+            view.backgroundColor = .white
         }
         
-        view.topBorder(color: UIColor.black, thickness: 0.5)
+        view.topBorder(color: UIColor.lightGray, thickness: 0.5)
         
         [previousButton, playButton, skipButton, titleLabel, artistLabel, imageView].forEach { [unowned self] (view) in
             self.view.addSubview(view)
@@ -204,7 +204,7 @@ class PlayerViewController: UIViewController {
         if(songIndex + 1 >= queue.endIndex) {
             //end of queue, reset queue
             pause()
-            if let song = currentSong {
+            if currentSong != nil {
                 goToStartOfCurrentSong()
             }
             state = .isPaused

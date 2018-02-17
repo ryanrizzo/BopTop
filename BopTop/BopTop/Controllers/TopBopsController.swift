@@ -15,7 +15,7 @@ class TopBopsController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Top Bops"
-        navigationController?.navigationBar.barStyle = UIBarStyle.blackTranslucent
+        navigationController?.navigationBar.barStyle = UIBarStyle.default
         
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -32,7 +32,7 @@ class TopBopsController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         view.addSubview(playerController.view)
-        if let tabBarController = tabBarController {
+        if tabBarController != nil {
             playerController.view.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: view.frame.width, height: 60))
         }
     }
