@@ -1,15 +1,14 @@
 //
-//  TopBopCell.swift
+//  WannabeBopCell.swift
 //  BopTop
 //
-//  Created by Ryan Rizzo on 2/13/18.
+//  Created by Ryan Rizzo on 2/16/18.
 //  Copyright © 2018 Ryan Rizzo. All rights reserved.
 //
 
 import UIKit
 
-class TopBopCell: UICollectionViewCell {
-    
+class WannabeBopCell: UICollectionViewCell {
     var playTapped : (()->())?
     
     let speakerView = SpeakerView.init(frame: .init(x: 0, y: 0, width: 30, height: 40))
@@ -52,7 +51,7 @@ class TopBopCell: UICollectionViewCell {
         label.shadowColor = .black
         label.shadowOffset = CGSize.init(width: 1.0, height: 1.0)
         return label
-        }()
+    }()
     
     let likesLabel: UILabel = {
         let label = UILabel()
@@ -61,7 +60,7 @@ class TopBopCell: UICollectionViewCell {
         label.shadowColor = .black
         label.shadowOffset = CGSize.init(width: 1.0, height: 1.0)
         return label
-        }()
+    }()
     
     let playsLabel: UILabel = {
         let label = UILabel()
@@ -79,7 +78,7 @@ class TopBopCell: UICollectionViewCell {
         label.shadowColor = .black
         label.shadowOffset = CGSize.init(width: 1.0, height: 1.0)
         return label
-        }()
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -87,7 +86,7 @@ class TopBopCell: UICollectionViewCell {
         
         addSubview(imageView)
         imageView.fillSuperview()
-
+        
         addSubview(dateLabel)
         dateLabel.anchor(topAnchor, left: leftAnchor, bottom: nil, right: nil, topConstant: 5, leftConstant: 5, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         
@@ -110,8 +109,8 @@ class TopBopCell: UICollectionViewCell {
         playsIcon.anchor(playsLabel.topAnchor, left: nil, bottom: playsLabel.bottomAnchor, right: likesIcon.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 10, heightConstant: 10)
         
         addSubview(speakerView)
-        speakerView.anchorCenterSuperview()
 
+        speakerView.anchorCenterSuperview()
     }
     
     func setupViews() {

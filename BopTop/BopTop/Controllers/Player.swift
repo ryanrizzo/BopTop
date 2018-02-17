@@ -9,18 +9,25 @@
 import UIKit
 import AVFoundation
 
-class Player: AVQueuePlayer {
+class Player: AVPlayer {
     static let sharedInstance = Player()
     
-    var player: AVQueuePlayer = AVQueuePlayer()
+    var player: AVPlayer = AVPlayer()
+    let session = AVAudioSession.sharedInstance()
+    
+    override init() {
+        super.init()
+        
+    }
     
     override func play() {
         super.play()
         // Put play code here
-    }
-    
-    func playWithURL(url : NSURL) {
-        // Put play code here
+        do {
+            try session.setActive(true)
+        } catch let error {
+            print("Unable to activate audio session: \(error.localizedDescription)")
+        }
     }
     
 }

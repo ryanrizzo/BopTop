@@ -8,19 +8,18 @@
 
 import UIKit
 
-
+let playerController = PlayerViewController()
 
 class MainTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let topBopsController = TopBopsController()
-        let wannabeBopsController = WannabeBopsController()
-        let topBopsNavController = UINavigationController(rootViewController: topBopsController)
-        let wannabeBopsNavController = UINavigationController(rootViewController: wannabeBopsController)
-        topBopsNavController.tabBarItem = UITabBarItem.init(title: "Top Bops", image: nil, tag: 0)
-        wannabeBopsNavController.tabBarItem = UITabBarItem.init(title: "Wannabe Bops", image: nil, tag: 0)
-        let viewControllerList = [topBopsNavController, wannabeBopsNavController]
-        viewControllers = viewControllerList
+        
+        tabBar.barStyle = UIBarStyle.black
+        tabBar.tintColor = .yellow
+        tabBar.unselectedItemTintColor = .white
+        tabBar.isTranslucent = false
+        
+        
     }
 }

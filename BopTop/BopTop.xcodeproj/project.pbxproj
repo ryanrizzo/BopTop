@@ -10,6 +10,11 @@
 		15AA231B203404A10041B552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231A203404A10041B552 /* Assets.xcassets */; };
 		15AA231D203405410041B552 /* A Millie Freemix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231C203405410041B552 /* A Millie Freemix.mp3 */; };
 		15AA2320203414C90041B552 /* Piggy Bank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15AA231F203414C90041B552 /* Piggy Bank.mp3 */; };
+		15AA23222035F8250041B552 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23212035F8250041B552 /* PlayerViewController.swift */; };
+		15AA23242037A13A0041B552 /* WannabeBops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23232037A13A0041B552 /* WannabeBops.swift */; };
+		15AA23262037A39B0041B552 /* WannabeBopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23252037A39B0041B552 /* WannabeBopCell.swift */; };
+		15AA23282037A3D10041B552 /* WannabeBopsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23272037A3D10041B552 /* WannabeBopsHeader.swift */; };
+		15AA232A2037F26B0041B552 /* UIView Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23292037F26B0041B552 /* UIView Speaker.swift */; };
 		15E2747B20337EA400F6ED70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2747A20337EA400F6ED70 /* AppDelegate.swift */; };
 		15E2748320337EA400F6ED70 /* BopTop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15E2748120337EA400F6ED70 /* BopTop.xcdatamodeld */; };
 		15E2748820337EA400F6ED70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E2748620337EA400F6ED70 /* LaunchScreen.storyboard */; };
@@ -57,6 +62,11 @@
 		15AA231C203405410041B552 /* A Millie Freemix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Millie Freemix.mp3"; path = "../../../../../../../Music/iTunes/iTunes Media/Music/Lil Wayne/Unknown/A Millie Freemix.mp3"; sourceTree = "<group>"; };
 		15AA231E203405450041B552 /* A Millie Freemix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A Millie Freemix.mp3"; sourceTree = "<group>"; };
 		15AA231F203414C90041B552 /* Piggy Bank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Piggy Bank.mp3"; path = "../../../../../../Music/iTunes/iTunes Media/Music/50 Cent/The Massacre/Piggy Bank.mp3"; sourceTree = "<group>"; };
+		15AA23212035F8250041B552 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		15AA23232037A13A0041B552 /* WannabeBops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannabeBops.swift; sourceTree = "<group>"; };
+		15AA23252037A39B0041B552 /* WannabeBopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannabeBopCell.swift; sourceTree = "<group>"; };
+		15AA23272037A3D10041B552 /* WannabeBopsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannabeBopsHeader.swift; sourceTree = "<group>"; };
+		15AA23292037F26B0041B552 /* UIView Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Speaker.swift"; sourceTree = "<group>"; };
 		15E2747720337EA400F6ED70 /* BopTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BopTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E2747A20337EA400F6ED70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E2748220337EA400F6ED70 /* BopTop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BopTop.xcdatamodel; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 				15E274B52033860400F6ED70 /* WannabeBopsCollectionController.swift */,
 				15E274B92033986000F6ED70 /* TopBopsController.swift */,
 				15E274B3203385A000F6ED70 /* TopBopsCollectionController.swift */,
+				15AA23212035F8250041B552 /* PlayerViewController.swift */,
 				15E274CB203400F900F6ED70 /* Player.swift */,
 			);
 			path = Controllers;
@@ -197,6 +208,7 @@
 			children = (
 				15E274AF203381EE00F6ED70 /* UIView Layout Helpers.swift */,
 				15AA231C203405410041B552 /* A Millie Freemix.mp3 */,
+				15AA23292037F26B0041B552 /* UIView Speaker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +218,8 @@
 			children = (
 				15E274BC20339F8200F6ED70 /* TopBopsHeader.swift */,
 				15E274BE20339FAB00F6ED70 /* TopBopCell.swift */,
+				15AA23252037A39B0041B552 /* WannabeBopCell.swift */,
+				15AA23272037A3D10041B552 /* WannabeBopsHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +231,7 @@
 				15E274C32033AA1100F6ED70 /* TopBops.swift */,
 				15E274C52033AEFD00F6ED70 /* SongStore.swift */,
 				15E274C72033BC8100F6ED70 /* DateHelper.swift */,
+				15AA23232037A13A0041B552 /* WannabeBops.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -544,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E274B62033860400F6ED70 /* WannabeBopsCollectionController.swift in Sources */,
+				15AA23262037A39B0041B552 /* WannabeBopCell.swift in Sources */,
 				15E274B82033984C00F6ED70 /* WannabeBopsController.swift in Sources */,
 				15E274B0203381EE00F6ED70 /* UIView Layout Helpers.swift in Sources */,
 				15E274C22033A6A700F6ED70 /* Song.swift in Sources */,
@@ -553,12 +569,16 @@
 				15E274B4203385A000F6ED70 /* TopBopsCollectionController.swift in Sources */,
 				15E274BD20339F8200F6ED70 /* TopBopsHeader.swift in Sources */,
 				15E274C62033AEFD00F6ED70 /* SongStore.swift in Sources */,
+				15AA23282037A3D10041B552 /* WannabeBopsHeader.swift in Sources */,
 				15E274C82033BC8100F6ED70 /* DateHelper.swift in Sources */,
+				15AA232A2037F26B0041B552 /* UIView Speaker.swift in Sources */,
 				15E274BA2033986000F6ED70 /* TopBopsController.swift in Sources */,
 				15E2747B20337EA400F6ED70 /* AppDelegate.swift in Sources */,
 				15E274C42033AA1100F6ED70 /* TopBops.swift in Sources */,
 				15E274AC203380E600F6ED70 /* LoadingController.swift in Sources */,
 				15E274BF20339FAB00F6ED70 /* TopBopCell.swift in Sources */,
+				15AA23242037A13A0041B552 /* WannabeBops.swift in Sources */,
+				15AA23222035F8250041B552 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,8 @@ class TopBopsHeader: UICollectionViewCell {
     
     let weekLabel : UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.textColor = UIColor.black
+        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textAlignment = NSTextAlignment.left
         return label
     }()
